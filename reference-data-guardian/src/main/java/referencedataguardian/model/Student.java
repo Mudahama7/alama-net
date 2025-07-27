@@ -1,6 +1,7 @@
 package referencedataguardian.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 
 @Data

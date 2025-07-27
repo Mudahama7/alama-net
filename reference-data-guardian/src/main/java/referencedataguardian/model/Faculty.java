@@ -14,9 +14,9 @@ public class Faculty {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String faculty_name;
+    private String facultyName;
 
-    private String external_id;
+    private String externalId;
 
     @OneToMany(mappedBy = "faculty", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Departement> departements;

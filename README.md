@@ -1,6 +1,7 @@
 1. Contexte général
    L’université souhaite disposer d’un système centralisé permettant à la fois :
    - de planifier efficacement les sessions d’examens semestriels,
+   - de gerer l'acces à la salle d'examen et prise de présence par technologie RFID
    - de gérer la saisie, la validation et la publication des résultats,
    - de faciliter l’accès aux relevés pour les étudiants.
    - et permettre aux étudiants d'introduire un recours après avoir vu leurs notes

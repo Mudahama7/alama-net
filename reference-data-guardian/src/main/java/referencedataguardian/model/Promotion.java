@@ -20,7 +20,7 @@ public class Promotion {
 
     private String academic_year;
 
-    private String external_id;
+    private String externalId;
 
     @OneToMany(mappedBy = "promotion", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Student> students;

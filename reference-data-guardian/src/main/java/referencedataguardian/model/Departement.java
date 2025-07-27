@@ -15,9 +15,9 @@ public class Departement {
 
     private String designation;
 
-    private String chef_name;
+    private String chefName;
 
-    private String external_id;
+    private String externalId;
 
     @OneToMany(mappedBy = "departement", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Promotion> promotions;

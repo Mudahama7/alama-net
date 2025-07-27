@@ -12,7 +12,7 @@ public class Teacher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String registration_number;
+    private String registrationNumber;
 
     private String name;
 
