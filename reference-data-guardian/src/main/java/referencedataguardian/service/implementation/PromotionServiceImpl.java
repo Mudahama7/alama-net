@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.PromotionDto;
 import referencedataguardian.model.Promotion;
 import referencedataguardian.repository.PromotionRepository;
-import referencedataguardian.service.PromotionService;
+import referencedataguardian.service.contract.PromotionService;
 import referencedataguardian.service.mapper.PromotionMapper;
 
 import java.util.List;

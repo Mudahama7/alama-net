@@ -1,4 +1,4 @@
-package referencedataguardian.service;
+package referencedataguardian.service.contract;
 
 import referencedataguardian.dto.PromotionDto;
 import referencedataguardian.model.Promotion;

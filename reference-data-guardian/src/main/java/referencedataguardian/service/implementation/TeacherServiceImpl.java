@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.TeacherDto;
 import referencedataguardian.model.Teacher;
 import referencedataguardian.repository.TeacherRepository;
-import referencedataguardian.service.TeacherService;
+import referencedataguardian.service.contract.TeacherService;
 import referencedataguardian.service.mapper.TeacherMapper;
 
 import java.util.List;
@@ -31,5 +31,12 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public Teacher findByEmail(String email) {
         return teacherRepository.findByEmail(email).orElse(null);
+    }
+
+    @Override
+    public List<TeacherDto> findAllTeachers() {
+        return teacherRepository.findAll().stream()
+                .map(teacherMapper::mapFromEntityToDto)
+                .toList();
     }
 }

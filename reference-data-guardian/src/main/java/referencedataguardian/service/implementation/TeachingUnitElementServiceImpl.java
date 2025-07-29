@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.TeachingUnitElementDto;
 import referencedataguardian.model.TeachingUnitElement;
 import referencedataguardian.repository.TeachingUnitElementRepository;
-import referencedataguardian.service.TeachingUnitElementService;
+import referencedataguardian.service.contract.TeachingUnitElementService;
 import referencedataguardian.service.mapper.TeachingUnitElementMapper;
 
 import java.util.List;
@@ -26,5 +26,12 @@ public class TeachingUnitElementServiceImpl implements TeachingUnitElementServic
         teachingUnitElementRepository.saveAll(teachingUnitElementList);
 
         return true;
+    }
+
+    @Override
+    public List<TeachingUnitElementDto> getTeachingUnitElementsForOurSystem() {
+        return teachingUnitElementRepository.findAll().stream()
+                .map(teachingUnitElementMapper::mapFromEntityToDto)
+                .toList();
     }
 }

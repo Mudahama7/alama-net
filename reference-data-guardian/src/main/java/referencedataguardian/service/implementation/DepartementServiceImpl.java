@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.DepartementDto;
 import referencedataguardian.model.Departement;
 import referencedataguardian.repository.DepartementRepository;
-import referencedataguardian.service.DepartementService;
+import referencedataguardian.service.contract.DepartementService;
 import referencedataguardian.service.mapper.DepartementMapper;
 import java.util.List;
 

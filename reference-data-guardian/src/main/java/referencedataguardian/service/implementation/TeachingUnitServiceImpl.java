@@ -5,10 +5,9 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.TeachingUnitDto;
 import referencedataguardian.model.TeachingUnit;
 import referencedataguardian.repository.TeachingUnitRepository;
-import referencedataguardian.service.TeachingUnitService;
+import referencedataguardian.service.contract.TeachingUnitService;
 import referencedataguardian.service.mapper.TeachingUnitMapper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor

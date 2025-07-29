@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.StudentDto;
 import referencedataguardian.model.Student;
 import referencedataguardian.repository.StudentRepository;
-import referencedataguardian.service.StudentService;
+import referencedataguardian.service.contract.StudentService;
 import referencedataguardian.service.mapper.StudentMapper;
 import java.util.List;
 
@@ -25,5 +25,13 @@ public class StudentServiceImpl implements StudentService {
         studentRepository.saveAll(students);
         return true;
     }
+
+    @Override
+    public List<StudentDto> getAllStudents() {
+        return studentRepository.findAll().stream()
+                .map(studentMapper::mapFromEntityToDtoResponse)
+                .toList();
+    }
+
 
 }

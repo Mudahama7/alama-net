@@ -5,10 +5,9 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.DeaneryMemberDto;
 import referencedataguardian.model.DeaneryMember;
 import referencedataguardian.repository.DeaneryMermberRepository;
-import referencedataguardian.service.DeaneryMemberService;
+import referencedataguardian.service.contract.DeaneryMemberService;
 import referencedataguardian.service.mapper.DeaneryMemberMapper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor

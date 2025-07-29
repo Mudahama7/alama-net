@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import referencedataguardian.dto.StudentDto;
 import referencedataguardian.model.Student;
-import referencedataguardian.service.PromotionService;
+import referencedataguardian.service.contract.PromotionService;
 
 @AllArgsConstructor
 @Component

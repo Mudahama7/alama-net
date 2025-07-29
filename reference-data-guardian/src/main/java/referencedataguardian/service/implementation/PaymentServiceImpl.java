@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import referencedataguardian.dto.PaymentDto;
 import referencedataguardian.model.Payment;
 import referencedataguardian.repository.PaymentRepository;
-import referencedataguardian.service.PaymentService;
+import referencedataguardian.service.contract.PaymentService;
 import referencedataguardian.service.mapper.PaymentMapper;
 
 import java.util.List;
