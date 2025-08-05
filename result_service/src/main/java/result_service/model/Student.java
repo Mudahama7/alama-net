@@ -1,34 +1,36 @@
 package result_service.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import result_service.model.enums.Type_cote;
 
-import java.time.LocalDateTime;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-public class Cotes {
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private Number cote;
+    private String registrationNumber;
 
-    private Type_cote type_cote;
+    private String email;
 
-    private LocalDateTime date = LocalDateTime.now();
+    private String name;
+
+    private String surname;
+
+    private String first_name;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Student student;
+    private Promotion promotion;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private TeachingUnitElement teachingUnit;
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY)
+    private List<Cotes> cotes;
 
 }

@@ -31,7 +31,7 @@
    - Créer une session (session normale, rattrapage)
    - Planifier les examens (dates, heures, salles)
    - Associer matières, promotions, surveillants
-   - Générer le planning d’examen par promotion ou salle
+   - Générer le planning d’examen par promotionReq ou salle
    - Exportation PDF du planning
 
    4.2 Gestion des notes et résultats
@@ -98,7 +98,7 @@
 
 7. Cas d’usage simplifié
     1. L’admin crée une session d’examen (Janvier 2026)
-    2. Le secrétariat y planifie les examens par matière et promotion
+    2. Le secrétariat y planifie les examens par matière et promotionReq
     3. Le professeur saisit ses notes en ligne
     4. Le secrétariat visualise les résultats et génère les bulletins
     5. L’étudiant est notifié, se connecte pour visualiser ses résultats, et peut maintenant introduire un récours ou télécharger son relevé semestriel
