@@ -89,13 +89,19 @@
    - notification-service
 
    B. Spring Security pour gestion d’accès
+   
    C. PostgreSQL pour la base de données
+   
    D. MinIO pour le stockage des fichiers (bulletins PDF)
+   
    E. Kafka pour les événements (notifications, mises à jour)
+   
    F. Frontend
    - Next.js
    - Flutter pour l’application mobile
+   
    G. Autres
+   
    - Eureka pour la découverte de services
    - Spring Cloud Gateway comme passerelle API
    - Docker pour le déploiement
