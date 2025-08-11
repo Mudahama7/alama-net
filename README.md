@@ -6,6 +6,7 @@
    - de gérer la saisie, la validation et la publication des résultats,
    - de faciliter l’accès aux relevés pour les étudiants.
    - et permettre aux étudiants d'introduire un recours après avoir vu leurs notes
+   
    Le système devra être accessible via une interface web et mobile, sécurisé et interconnecté.
 
 
