@@ -12,11 +12,11 @@
 
 ## 2. Objectifs du projet
    Ainsi on se fixe pour objectif de :
-    - Digitaliser le processus de planification des examens
-    - Centraliser la gestion des notes et des résultats académiques-en systeme LMD
-    - Automatiser la génération de relevés de cotes après chaque fin de semestre
-    - Permettre aux étudiants d’accéder à leurs informations en temps réel
-    - Offrir une vision globale à l’administration (statistiques : de quoi ?, validations, etc.)
+    - digitaliser le processus de planification des examens
+    - centraliser la gestion des notes et des résultats académiques-en systeme LMD
+    - automatiser la génération de relevés de cotes après chaque fin de semestre
+    - permettre aux étudiants d’accéder à leurs informations en temps réel
+    - offrir une vision globale à l’administration (statistiques : de quoi ?, validations, etc.)
 
 
 ## 3. Acteurs du système
