@@ -1,4 +1,4 @@
-1. Contexte général
+## 1. Contexte général
 
    L’université souhaite disposer d’un système centralisé permettant à la fois :
    - de planifier efficacement les sessions d’examens semestriels,
@@ -10,7 +10,7 @@
    Le système devra être accessible via une interface web et mobile, sécurisé et interconnecté.
 
 
-3. Objectifs du projet
+## 3. Objectifs du projet
     - Digitaliser le processus de planification des examens
     - Centraliser la gestion des notes et des résultats académiques-en systeme LMD
     - Automatiser la génération de relevés de cotes après chaque fin de semestre
@@ -18,7 +18,8 @@
     - Offrir une vision globale à l’administration (statistiques : de quoi ?, validations, etc.)
 
 
-4. Acteurs du système
+## 4. Acteurs du système
+
    | Acteur                     | Description                                                                                           |
    | -------------------------- | ------------------------------------------------------------------------------------------------------|
    | Administrateur             | Supervise le système, gère les comptes, les paramètres globaux       			                        |
@@ -28,15 +29,15 @@
    | Étudiant                   | Consulte son planning d’examen, ses notes,introduire recours, télécharge ses relevés 	                |
    | Carte et lecteur RFID      | Controle d'accès à la salle d'examen et prise de présence de la participation d'étudiants aux examens |
 
-5. Exigences fonctionnelles
-   4.1 Planification des examens
+## 5. Exigences fonctionnelles
+   ### 4.1 Planification des examens
    - Créer une session (session normale, rattrapage)
    - Planifier les examens (dates, heures, salles)
    - Associer matières, promotions, surveillants
    - Générer le planning d’examen par promotionReq ou salle
    - Exportation PDF du planning
 
-   4.2 Gestion des notes et résultats
+   ### 4.2 Gestion des notes et résultats
    - Affecter les matières aux enseignants
    - Saisie des notes (par matière / étudiant)
    - Calcul automatique des moyennes, crédits, UE validées
@@ -45,13 +46,13 @@
    - Gestion des résultats de session de rattrapage
    - (Penser aussi à la délibération)
 
-   4.3 Relevés et bulletins
+   ### 4.3 Relevés et bulletins
    - Génération automatique de bulletins PDF
    - Ajout de signature numérique
    - Génération de QR Code pour vérification en ligne
    - Téléchargement par l’étudiant depuis son espace
 
-   4.4 Portail étudiant
+   ### 4.4 Portail étudiant
    - Consulter le planning des examens
    - Visualiser ses notes
    - Introduire un récours si bésoin... si besoin de réagir à une note donnée
@@ -60,14 +61,14 @@
    - Télécharger les bulletins
    - Notifications en cas de nouvelle note ou convocation
 
-   4.5 Notifications
+   ### 4.5 Notifications
    - Envoi de mails et SMS lors de :
    - Programmation d’un examen
    - Publication des résultats
    - Modification de planning
 
 
-6. Exigences non fonctionnelles
+## 6. Exigences non fonctionnelles
    | Critère            | Détail                                                  |
    | ------------------ | ------------------------------------------------------- |
    | Sécurité           | Authentification JWT, rôles, journalisation des actions |
@@ -76,8 +77,8 @@
    | Maintenabilité     | Code bien structuré, modulaire, tests unitaires         |
    | Performance        | Temps de réponse rapide, base de données optimisée      |
 
-7. Architecture technique proposée
-   A. Backend
+## 7. Architecture technique proposée
+   ### A. Backend
    Spring Boot, avec microservices :
    - exam-session-service
    - result-service
@@ -86,7 +87,7 @@
    - document-service
    - notification-service
 
-   B. Spring Security pour gestion d’accès
+   ### B. Spring Security pour gestion d’accès
    C. PostgreSQL pour la base de données
    D. MinIO pour le stockage des fichiers (bulletins PDF)
    E. Kafka pour les événements (notifications, mises à jour)
@@ -98,7 +99,7 @@
    - Spring Cloud Gateway comme passerelle API
    - Docker pour le déploiement
 
-8. Cas d’usage simplifié
+## 8. Cas d’usage simplifié
     1. L’admin crée une session d’examen (Janvier 2026)
     2. Le secrétariat y planifie les examens par matière et promotionReq
     3. Le professeur saisit ses notes en ligne
@@ -106,7 +107,7 @@
     5. L’étudiant est notifié, se connecte pour visualiser ses résultats, et peut maintenant introduire un récours ou télécharger son relevé semestriel
     6. En cas de rattrapage, un second planning est lancé
 
-9. Livrables attendus
+## 9. Livrables attendus
     - Code source complet (frontend + backend)
     - Base de données PostgreSQL (structure et données de test)
     - Documentation technique (Swagger pour l’API, readme, diagrammes)
