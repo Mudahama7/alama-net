@@ -11,6 +11,7 @@
 
 
 ## 2. Objectifs du projet
+
    Ainsi on se fixe pour objectif de :
     - digitaliser le processus de planification des examens
     - centraliser la gestion des notes et des résultats académiques-en systeme LMD
@@ -101,6 +102,7 @@
    - Docker pour le déploiement
 
 ## 7. Cas d’usage simplifié
+
    Prénons l'exemple d'un flow simple :
     1. L’admin crée une session d’examen (Janvier 2026)
     2. Le secrétariat y planifie les examens par matière et promotionReq
@@ -110,6 +112,7 @@
     6. En cas de rattrapage, un second planning est lancé
 
 ## 8. Livrables attendus
+
    En fin de projet on devra livrer : 
     - Code source complet (frontend + backend)
     - Base de données PostgreSQL (structure et données de test)
