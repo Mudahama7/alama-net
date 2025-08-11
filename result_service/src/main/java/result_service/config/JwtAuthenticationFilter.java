@@ -26,6 +26,7 @@ import javax.crypto.spec.SecretKeySpec;
 @AllArgsConstructor
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
@@ -69,11 +70,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 return;
             } catch (io.jsonwebtoken.JwtException e) {
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                log.info("Erreur JWT : {}", e.getMessage());
+                log.info("Error JWT : {}", e.getMessage());
                 return;
             } catch (Exception e) {
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                log.info("Erreur inconnue : {}", e.getMessage());
+                log.info("Unknown Error : {}", e.getMessage());
                 return;
             }
         }

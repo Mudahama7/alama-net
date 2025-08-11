@@ -15,6 +15,7 @@
         <module>config_server</module>
         <module>result_service</module>
         <module>reference-data-guardian</module>
+        <module>api_gateway</module>
     </modules>
 
     <properties>

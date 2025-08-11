@@ -19,7 +19,9 @@ public class Cotes {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private Number cote;
+    private Double cote;
+
+    private Double total;
 
     private Type_cote type_cote;
 

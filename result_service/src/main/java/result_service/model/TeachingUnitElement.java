@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.query.sqm.FetchClauseType;
 
 import java.util.List;
 
@@ -31,5 +32,8 @@ public class TeachingUnitElement {
 
     @OneToMany(mappedBy = "teachingUnit", fetch = FetchType.LAZY)
     private List<Cotes> cotes;
+
+    @OneToMany(mappedBy = "teachingUnitElement", fetch = FetchType.LAZY)
+    private List<AverageInTUE> averageInTUE;
 
 }

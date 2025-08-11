@@ -19,6 +19,7 @@ public class CotesMapper {
         Cotes cotes = new Cotes();
 
         cotes.setCote(coteRequest.getCote());
+        cotes.setTotal(coteRequest.getTotal());
         cotes.setType_cote(Type_cote.valueOf(coteRequest.getType_cote()));
         cotes.setStudent(studentService.findStudentByRegistration_number(coteRequest.getStudentReq().getRegistration_number()));
         cotes.setTeachingUnit(teachingUnitElementService.findTeachingUnitElementByCode(coteRequest.getTeachingUnitElementReq().getCode()));

@@ -4,6 +4,6 @@ public enum Type_cote {
     travail_pratique,
     travail_dirige,
     interrogation,
-    examen
+    exam_first_session,
+    exam_second_session
 }
-

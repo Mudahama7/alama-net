@@ -14,7 +14,8 @@ public class NewCoteRequest {
     private TeachingUnitElementReq teachingUnitElementReq;
     private StudentReq studentReq;
 
-    private Number cote;
+    private Double cote;
+    private Double total;
     private String type_cote;
 
 }

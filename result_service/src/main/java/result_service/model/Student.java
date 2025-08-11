@@ -33,4 +33,7 @@ public class Student {
     @OneToMany(mappedBy = "student", fetch = FetchType.LAZY)
     private List<Cotes> cotes;
 
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY)
+    private List<AverageInTUE> averageInTUE;
+
 }
