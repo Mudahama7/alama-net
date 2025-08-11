@@ -10,7 +10,7 @@
    Le système devra être accessible via une interface web et mobile, sécurisé et interconnecté.
 
 
-## 3. Objectifs du projet
+## 2. Objectifs du projet
     - Digitaliser le processus de planification des examens
     - Centraliser la gestion des notes et des résultats académiques-en systeme LMD
     - Automatiser la génération de relevés de cotes après chaque fin de semestre
@@ -18,7 +18,7 @@
     - Offrir une vision globale à l’administration (statistiques : de quoi ?, validations, etc.)
 
 
-## 4. Acteurs du système
+## 3. Acteurs du système
 
    | Acteur                     | Description                                                                                           |
    | -------------------------- | ------------------------------------------------------------------------------------------------------|
@@ -29,7 +29,7 @@
    | Étudiant                   | Consulte son planning d’examen, ses notes,introduire recours, télécharge ses relevés 	                |
    | Carte et lecteur RFID      | Controle d'accès à la salle d'examen et prise de présence de la participation d'étudiants aux examens |
 
-## 5. Exigences fonctionnelles
+## 4. Exigences fonctionnelles
    ### 4.1 Planification des examens
    - Créer une session (session normale, rattrapage)
    - Planifier les examens (dates, heures, salles)
@@ -68,7 +68,7 @@
    - Modification de planning
 
 
-## 6. Exigences non fonctionnelles
+## 5. Exigences non fonctionnelles
    | Critère            | Détail                                                  |
    | ------------------ | ------------------------------------------------------- |
    | Sécurité           | Authentification JWT, rôles, journalisation des actions |
@@ -77,7 +77,7 @@
    | Maintenabilité     | Code bien structuré, modulaire, tests unitaires         |
    | Performance        | Temps de réponse rapide, base de données optimisée      |
 
-## 7. Architecture technique proposée
+## 6. Architecture technique proposée
    ### A. Backend
    Spring Boot, avec microservices :
    - exam-session-service
@@ -99,7 +99,7 @@
    - Spring Cloud Gateway comme passerelle API
    - Docker pour le déploiement
 
-## 8. Cas d’usage simplifié
+## 7. Cas d’usage simplifié
     1. L’admin crée une session d’examen (Janvier 2026)
     2. Le secrétariat y planifie les examens par matière et promotionReq
     3. Le professeur saisit ses notes en ligne
@@ -107,7 +107,7 @@
     5. L’étudiant est notifié, se connecte pour visualiser ses résultats, et peut maintenant introduire un récours ou télécharger son relevé semestriel
     6. En cas de rattrapage, un second planning est lancé
 
-## 9. Livrables attendus
+## 8. Livrables attendus
     - Code source complet (frontend + backend)
     - Base de données PostgreSQL (structure et données de test)
     - Documentation technique (Swagger pour l’API, readme, diagrammes)
