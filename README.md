@@ -25,8 +25,7 @@
    | -------------------------- | ------------------------------------------------------------------------------------------------------|
    | Administrateur             | Supervise le système, gère les comptes, les paramètres globaux       			                        |
    | Secrétariat facultaire     | Planifie les sessions, gère les matières et promotions            			                        |
-   | Professeur                 | Dépose les notes, consulte les statistiques de sa matière, visualiser les recours des étudiants       |
-   | Surveillant                | Consulte son emploi du temps d’examens                            			                        |
+   | Professeur                 | Dépose les notes, consulte les statistiques par rapport aux resultats dans sa matière, visualiser les recours des étudiants       |
    | Étudiant                   | Consulte son planning d’examen, ses notes,introduire recours, télécharge ses relevés 	                |
    | Carte et lecteur RFID      | Controle d'accès à la salle d'examen et prise de présence de la participation d'étudiants aux examens |
 
