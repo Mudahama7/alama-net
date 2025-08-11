@@ -12,7 +12,6 @@
 
 ## 2. Objectifs du projet
 
-   Ainsi on se fixe pour objectif de :
     - digitaliser le processus de planification des examens
     - centraliser la gestion des notes et des résultats académiques-en systeme LMD
     - automatiser la génération de relevés de cotes après chaque fin de semestre
@@ -80,7 +79,7 @@
    | Performance        | Temps de réponse rapide, base de données optimisée      |
 
 ## 6. Architecture technique proposée
-   ### A. Backend
+   A. Backend
    Spring Boot, avec microservices :
    - exam-session-service
    - result-service
@@ -89,7 +88,7 @@
    - document-service
    - notification-service
 
-   ### B. Spring Security pour gestion d’accès
+   B. Spring Security pour gestion d’accès
    C. PostgreSQL pour la base de données
    D. MinIO pour le stockage des fichiers (bulletins PDF)
    E. Kafka pour les événements (notifications, mises à jour)
@@ -103,7 +102,6 @@
 
 ## 7. Cas d’usage simplifié
 
-   Prénons l'exemple d'un flow simple :
     1. L’admin crée une session d’examen (Janvier 2026)
     2. Le secrétariat y planifie les examens par matière et promotionReq
     3. Le professeur saisit ses notes en ligne
@@ -113,7 +111,6 @@
 
 ## 8. Livrables attendus
 
-   En fin de projet on devra livrer : 
     - Code source complet (frontend + backend)
     - Base de données PostgreSQL (structure et données de test)
     - Documentation technique (Swagger pour l’API, readme, diagrammes)
