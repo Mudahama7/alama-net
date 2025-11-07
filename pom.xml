@@ -9,7 +9,6 @@
     <artifactId>alama-net</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-
     <modules>
         <module>discovery_service</module>
         <module>config_server</module>
